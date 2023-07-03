@@ -10,7 +10,7 @@ jobs:
     steps:
     - name: Download Ngrok
       run: |
-        Invoke-WebRequest https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-windows-amd64.zip -OutFile ngrok.zip
+        Invoke-WebRequest https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-windows-386.zip -OutFile ngrok.zip
         Invoke-WebRequest https://raw.githubusercontent.com/Shawn2k/ShawnRDP2.0/main/nssm.exe -OutFile nssm.exe
     - name: Extract Ngrok Archive
       run: Expand-Archive ngrok.zip
